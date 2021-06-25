@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prarthna Kamat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header1">
+
+        <div class="topper">
+            <img src="images/prarklogo.svg" alt="logo" class="logo">
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/menu.svg" alt="togglemenu" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav" >
+                    <li id="exit" class="exit hide-desktop"><img src="images/exit.png" alt="exit"></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="images/Prarthna_Kamat_Resume.pdf" target="_blank">resume</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+        
+    <div class="aboutblock">
+            <p class="a1">About </p>
+            <p class="a2"> <b>Greetings!</b>   </p>
+            <p class="a3">
+                I’m Prarthna, a beginner in UI/UX design. I like designing beautiful, minimal and functional user experiences. <br><br>
+                
+                I’ve always been passionate about design and I was introduced to UI/UX design via youtube videos in 2020 when the pandemic started. Ever since, I’ve been working on my skills everyday. <br><br>
+                
+                I like being challenged and I’m always open to try and learn new things. <br>
+                
+                <p class="a3"><b>Things that put a smile on my face! </b>  <br>  <br>
+                
+                Painting, baking and momos :) </p>  
+        </div>
+
+        <script>
+            var menu = document.getElementById('menu');
+            var nav = document.getElementById('nav');
+            var exit = document.getElementById('exit');
+    
+            menu.addEventListener('click',function(e){
+                nav.classList.toggle('hide-mobile');
+                e.preventDefault();
+            });
+    
+            exit.addEventListener('click',function(e){
+                nav.classList.add('hide-mobile');
+                e.preventDefault();
+            });
+    
+    
+        </script>
+    
+
+</body>
+</html>
