@@ -58,23 +58,22 @@ ul{
 
 
 .section{
-    padding: 1.3em 1.9em 0 2em;
+    padding: 2em 1.9em 0 2em;
 }
 
 .l1{
     color: white;
     font-style: normal;
     font-weight: 100;
-    font-size: 14px;
-    line-height: 18px;
-    
+    font-size: 16.5px;
+    line-height: 35px;
 }
 
 .l2{
     color: white;
     font-weight: lighter;
-    font-size: 22px;
-    line-height: 16px;
+    font-size: 30px;
+    line-height: 11px;
     display: flex;
     justify-content: left;
     
@@ -96,8 +95,8 @@ ul{
 .l3{
     font-style: normal;
     font-weight: bold;
-    font-size: 15px;
-    line-height: 6px;
+    font-size: 20px;
+    line-height: 10px;
     letter-spacing: 0.02em;
     color: white;
     
@@ -106,8 +105,8 @@ ul{
 .l4{
     font-style: normal;
     font-weight: lighter;
-    font-size: 15px;
-    line-height: 2px;
+    font-size: 19px;
+    line-height: 0px;
     letter-spacing: 0.02em;
     color: white;
     margin-bottom: 2em;
@@ -116,13 +115,14 @@ ul{
 .resume{
     color: white;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 500;
     padding: 0.1em .5em;
     background-color: 6975D7;
     border-color: #FFB23E;
     border-style: solid;
-    border-radius: 5px;
-    border-width: 3px;
+    border-radius: 9px;
+    border-width: 5px;
+    font-size: 22px;
 }
 
 .resume:hover{
@@ -257,18 +257,27 @@ nav ul {
     text-align: center;
     background-color: #ffffff;
     opacity: 90%;
-    padding-top:50%;
-
+    padding-top:65%;
 }
+
+nav ul{
+    z-index:1;
+    visibility: visible;
+    filter:alpha(opacity=0);
+    -webkit-transition:20ms ease;
+    -moz-transition:20ms ease;
+    -o-transition:20ms ease;
+    transition:20ms ease;
+}
+
 
 nav ul li a{
     color:rgb(126, 126, 126);
     text-decoration: none;
-    font-size: 1;
+    font-size: 18px;
     display: block;
-    padding: 0.6em 2em;
+    padding: 0.9em 2em;
     z-index: 10;
-    
 }
 
 
@@ -278,6 +287,31 @@ nav ul li a:hover{
     transition: 0.5s;
 }
 
+.nav li ul {
+    position:absolute;
+    left:0;
+    top:36px;
+    z-index:1;
+    visibility:hidden;
+    opacity:0;
+    filter:alpha(opacity=0);
+    -webkit-transition:200ms ease;
+    -moz-transition:200ms ease;
+    -o-transition:200ms ease;
+    transition:200ms ease;
+}
+.nav ul > li:hover ul {
+    visibility:visible;
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+
+.nav li ul {
+    position:absolute;
+    left:0;
+    top:36px;
+    z-index:1;
+}
 
 .exit{
     position: absolute;
